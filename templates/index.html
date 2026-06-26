@@ -1,0 +1,309 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- ================= Hero Section ================= -->
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <h4>
+            Premium Fashion Store
+        </h4>
+
+        <h1>
+            Find Your New Style
+        </h1>
+
+        <p>
+            Explore the latest fashion products, save your favourite items,
+            view product details and enjoy a modern shopping experience
+            with TrendaMart.
+        </p>
+
+        <a href="/shop" class="btn">
+
+            <i class="fa-solid fa-store"></i>
+
+            Shop Now
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= Categories ================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            Shop by
+            <span class="gradient-text">
+                Category
+            </span>
+
+        </h2>
+
+        <div class="category-grid">
+
+            <!-- Men -->
+            <a href="/men" class="category-card">
+
+                <img
+                    src="{{ url_for('static', filename='images/for men.jpg') }}"
+                    alt="Men Wear"
+                >
+
+                <h3>
+                    Men
+                </h3>
+
+            </a>
+
+
+            <!-- Women -->
+            <a href="/women" class="category-card">
+
+                <img
+                    src="{{ url_for('static', filename='images/for women.jpg') }}"
+                    alt="Women Wear"
+                >
+
+                <h3>
+                    Women
+                </h3>
+
+            </a>
+
+
+            <!-- Kids -->
+            <a href="/kids" class="category-card">
+
+                <img
+                    src="{{ url_for('static', filename='images/for kids.jpg') }}"
+                    alt="Kids Wear"
+                >
+
+                <h3>
+                    Kids
+                </h3>
+
+            </a>
+
+
+            <!-- Accessories -->
+            <a href="/accessories" class="category-card">
+
+                <img
+                    src="{{ url_for('static', filename='images/for accessories.jpg') }}"
+                    alt="Accessories"
+                >
+
+                <h3>
+                    Accessories
+                </h3>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= Featured Products ================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            Featured
+            <span class="gradient-text">
+                Products
+            </span>
+
+        </h2>
+
+
+        <!-- Search & Sort -->
+
+        <div class="shop-tools">
+
+            <!-- Search Box -->
+            <div class="search-box">
+
+                <i class="fa-solid fa-search"></i>
+
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search Product..."
+                >
+
+            </div>
+
+
+            <!-- Sorting -->
+            <select id="sort-select">
+
+                <option value="">
+                    Sort Products
+                </option>
+
+                <option value="low">
+                    Price Low to High
+                </option>
+
+                <option value="high">
+                    Price High to Low
+                </option>
+
+                <option value="rating">
+                    Top Rated
+                </option>
+
+                <option value="newest">
+                    Newest
+                </option>
+
+            </select>
+
+
+            <!-- View All Button -->
+            <a href="/shop" class="btn small-btn">
+
+                View All
+
+            </a>
+
+        </div>
+
+
+        <!-- Products Loaded by JavaScript -->
+
+        <div
+            class="product-grid"
+            id="product-grid"
+            data-limit="12">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= Sale Banner ================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="sale-banner">
+
+            <h4>
+                New Trend 2026
+            </h4>
+
+            <h2>
+                Big Sale This Week
+            </h2>
+
+            <p>
+                Get up to 30% off on selected products.
+            </p>
+
+            <br>
+
+            <a href="/shop" class="btn btn-outline">
+
+                Explore Collection
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= Features ================= -->
+
+<section class="section">
+
+    <div class="container features">
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <h3>
+                Smart Search
+            </h3>
+
+            <p>
+                Find products quickly.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>
+                Wishlist
+            </h3>
+
+            <p>
+                Save your favourite products.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-truck-fast"></i>
+
+            <h3>
+                Fast Delivery
+            </h3>
+
+            <p>
+                Quick and secure checkout.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-user"></i>
+
+            <h3>
+                User Profile
+            </h3>
+
+            <p>
+                Manage your account easily.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

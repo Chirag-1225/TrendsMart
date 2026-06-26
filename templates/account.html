@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Account Section -->
+<section class="account-wrap">
+
+    <div class="account-card">
+
+        <!-- Profile Photo and Title -->
+        <div class="profile-top">
+
+            <img
+                id="profile-img"
+                class="profile-img"
+                src="/static/uploads/default-user.png"
+                alt="Profile Photo">
+
+            <h2>
+                My <span class="gradient-text">Account</span>
+            </h2>
+
+        </div>
+
+        <!-- Upload Profile Photo -->
+        <form id="photo-form" style="margin-bottom:18px;">
+
+            <input
+                type="file"
+                id="profile-photo"
+                accept="image/*"
+                required>
+
+            <button class="btn" type="submit">
+                Upload Profile Photo
+            </button>
+
+        </form>
+
+        <!-- User Information -->
+        <div class="profile-box" id="profile-data">
+            Loading...
+        </div>
+
+        <!-- Order History -->
+        <div class="orders-box">
+
+            <h3>My Orders</h3>
+
+            <!-- Orders will load here using JavaScript -->
+            <div id="orders-list"></div>
+
+        </div>
+
+        <!-- Logout Button -->
+        <button
+            class="btn"
+            style="width:100%; margin-top:20px;"
+            onclick="logout()">
+            Logout
+        </button>
+
+    </div>
+
+</section>
+
+{% endblock %}

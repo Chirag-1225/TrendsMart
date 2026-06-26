@@ -1,0 +1,123 @@
+/* =========================
+   Login / Register Page
+========================= */
+.start-page {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+}
+
+.start-left {
+    padding: 65px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 75, 43, 0.94),
+            rgba(138, 43, 226, 0.87)
+        ),
+        url("/static/images/hero-image.jpg") center / cover;
+
+    color: var(--white);
+}
+
+.start-left h1 {
+    font-size: clamp(3.2rem, 7vw, 6rem);
+    line-height: 1;
+}
+
+.start-left p {
+    max-width: 650px;
+    margin-top: 18px;
+
+    line-height: 1.85;
+    font-size: 1.05rem;
+}
+
+.start-badges {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+
+    margin-top: 28px;
+}
+
+.start-badges span {
+    background: rgba(255, 255, 255, 0.18);
+    padding: 10px 15px;
+    border-radius: 999px;
+}
+
+.start-right {
+    display: grid;
+    place-items: center;
+    padding: 30px;
+}
+
+.auth-card,
+.account-card,
+.cart-box,
+.payment-card,
+.detail-card,
+.wishlist-card {
+    width: min(500px, 94%);
+
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 28px;
+
+    padding: 32px;
+    box-shadow: var(--shadow);
+}
+
+.auth-card h2,
+.account-card h2 {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.tabs button {
+    flex: 1;
+
+    border: none;
+    border-radius: 999px;
+    padding: 11px;
+
+    background: #f3f4f6;
+    cursor: pointer;
+
+    font-weight: 700;
+    color: var(--text);
+}
+
+.tabs button.active {
+    background: linear-gradient(90deg, var(--primary), var(--pink));
+    color: var(--white);
+}
+
+.form-grid,
+form {
+    display: grid;
+    gap: 15px;
+}
+
+.skip-link {
+    text-align: center;
+    margin-top: 14px;
+
+    color: var(--primary);
+    font-weight: 700;
+
+    display: block;
+}

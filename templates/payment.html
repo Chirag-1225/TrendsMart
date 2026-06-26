@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Payment Page Heading -->
+<section class="page-title">
+
+    <div class="container">
+
+        <h1>
+            Payment <span class="gradient-text">Page</span>
+        </h1>
+
+        <p>
+            Confirm your details and complete your order.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Payment Section -->
+<section class="section" style="padding-top:20px;">
+
+    <div class="container payment-layout">
+
+        <!-- Order Summary -->
+        <div class="payment-card">
+
+            <h2 style="margin-bottom:18px;">
+                Order Summary
+            </h2>
+
+            <!-- Products will be loaded here -->
+            <div class="summary-list" id="payment-summary"></div>
+
+            <h2 style="margin-top:20px;">
+                Total : <span id="payment-total">₹0</span>
+            </h2>
+
+        </div>
+
+        <!-- Customer and Payment Details -->
+        <div class="payment-card">
+
+            <h2 style="margin-bottom:18px;">
+                Payment Details
+            </h2>
+
+            <form id="payment-form">
+
+                <input type="text" id="pay-name" placeholder="Full Name" required>
+                <input type="email" id="pay-email" placeholder="Email Address" required>
+                <input type="text" id="pay-phone" placeholder="Phone Number">
+
+                <textarea id="pay-address" placeholder="Shipping Address" required></textarea>
+
+                <select id="pay-method" required>
+                    <option value="Cash on Delivery">Cash on Delivery</option>
+                    <option value="UPI">UPI</option>
+                    <option value="Debit/Credit Card">Debit / Credit Card</option>
+                </select>
+
+                <input type="text" placeholder="UPI ID / Card Number (Demo)">
+
+                <button type="submit" class="btn">
+                    Pay & Place Order
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

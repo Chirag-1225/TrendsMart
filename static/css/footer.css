@@ -1,0 +1,32 @@
+/* =========================
+   Footer
+========================= */
+.footer {
+    background: #111827;
+    color: var(--white);
+
+    padding: 45px 0 20px;
+    margin-top: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+.footer p,
+.footer a {
+    color: #cbd5e1;
+    line-height: 1.9;
+}
+
+.copy {
+    text-align: center;
+    color: #cbd5e1;
+
+    margin-top: 30px;
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}

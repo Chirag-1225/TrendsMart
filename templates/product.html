@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Product Details Heading -->
+<section class="page-title">
+
+    <div class="container">
+
+        <h1>
+            Product <span class="gradient-text">Details</span>
+        </h1>
+
+        <p>
+            View product description, price, rating, size and stock details.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Product Details Section -->
+<section class="section" style="padding-top:20px;">
+
+    <div class="container">
+
+        <!-- Product details will be loaded here using JavaScript -->
+        <div
+            class="detail-layout"
+            id="product-detail"
+            data-id="{{ product_id }}">
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

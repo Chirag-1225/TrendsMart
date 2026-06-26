@@ -1,0 +1,59 @@
+/* =========================
+   Account Page
+========================= */
+.account-wrap {
+    min-height: calc(100vh - 74px);
+
+    display: grid;
+    place-items: center;
+
+    padding: 50px 0;
+}
+
+.profile-top {
+    text-align: center;
+}
+
+.profile-img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+
+    margin: 0 auto 15px;
+    object-fit: cover;
+
+    border: 5px solid var(--white);
+    box-shadow: var(--soft);
+}
+
+.profile-box {
+    background: #f8fafc;
+    border-radius: 18px;
+
+    padding: 18px;
+    margin-top: 15px;
+}
+
+.orders-box {
+    margin-top: 20px;
+}
+
+.order-card {
+    background: #f8fafc;
+    border-radius: 14px;
+
+    padding: 14px;
+    margin-top: 10px;
+}
+
+.order-card .remove-btn {
+    margin-top: 10px;
+}
+
+
+/* =========================
+   Wishlist Page
+========================= */
+.wishlist-card {
+    width: 100%;
+}

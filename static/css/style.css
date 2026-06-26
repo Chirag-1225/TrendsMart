@@ -1,0 +1,14 @@
+/* =========================
+   TrendaMart Main CSS File
+   All CSS files are imported here
+========================= */
+
+@import url("base.css");
+@import url("navbar.css");
+@import url("auth.css");
+@import url("home.css");
+@import url("products.css");
+@import url("cart-payment.css");
+@import url("account.css");
+@import url("footer.css");
+@import url("responsive.css");

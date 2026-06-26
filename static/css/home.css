@@ -1,0 +1,134 @@
+/* =========================
+   Hero Section
+========================= */
+.hero {
+    min-height: calc(100vh - 74px);
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.96),
+            rgba(255, 255, 255, 0.68)
+        ),
+        url("/static/images/hero-image.jpg") center / cover no-repeat;
+}
+
+.hero-content {
+    max-width: 660px;
+}
+
+.hero h4 {
+    color: var(--primary);
+    font-size: 1.25rem;
+}
+
+.hero h1 {
+    font-size: clamp(2.8rem, 7vw, 5.8rem);
+    line-height: 1.03;
+    margin: 10px 0 18px;
+}
+
+.hero p {
+    color: var(--text);
+    line-height: 1.85;
+    margin-bottom: 30px;
+    font-size: 1.06rem;
+}
+
+
+/* =========================
+   Categories
+========================= */
+.category-grid,
+.features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.category-card {
+    height: 265px;
+    border-radius: 26px;
+    overflow: hidden;
+
+    position: relative;
+    box-shadow: var(--soft);
+}
+
+.category-card img {
+    height: 100%;
+    transition: 0.45s;
+}
+
+.category-card:hover img {
+    transform: scale(1.09);
+}
+
+.category-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.62),
+        transparent
+    );
+}
+
+.category-card h3 {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    z-index: 2;
+
+    color: var(--white);
+    font-size: 1.45rem;
+}
+
+
+/* =========================
+   Sale Banner
+========================= */
+.sale-banner {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255, 75, 43, 0.93),
+            rgba(138, 43, 226, 0.84)
+        ),
+        url("/static/images/sale-image.jpg") center / cover;
+
+    border-radius: 30px;
+    padding: 75px 30px;
+
+    text-align: center;
+    color: var(--white);
+}
+
+.sale-banner h2 {
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+
+/* =========================
+   Feature Cards
+========================= */
+.feature-card {
+    background: var(--white);
+    border-radius: 22px;
+
+    padding: 30px 18px;
+    text-align: center;
+
+    box-shadow: var(--soft);
+}
+
+.feature-card i {
+    font-size: 34px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}

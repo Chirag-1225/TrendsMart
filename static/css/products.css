@@ -1,0 +1,257 @@
+/* =========================
+   Page Headings
+========================= */
+.page-title,
+.category-hero {
+    text-align: center;
+    padding: 50px 0 25px;
+}
+
+.category-hero h1,
+.page-title h1 {
+    font-size: clamp(2.25rem, 5vw, 4rem);
+}
+
+
+/* =========================
+   Category Filter
+========================= */
+.category-filter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin-bottom: 30px;
+}
+
+.category-filter a {
+    padding: 10px 18px;
+
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    color: var(--text);
+    font-weight: 600;
+}
+
+.category-filter a.active,
+.category-filter a:hover {
+    color: var(--white);
+    background: linear-gradient(90deg, var(--primary), var(--pink));
+    border-color: transparent;
+}
+
+
+/* =========================
+   Search and Sorting
+========================= */
+.shop-tools {
+    background: var(--white);
+    border-radius: 24px;
+    box-shadow: var(--soft);
+
+    padding: 18px;
+    margin-bottom: 28px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr auto;
+    gap: 14px;
+    align-items: center;
+}
+
+.search-box {
+    position: relative;
+}
+
+.search-box i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+    color: var(--muted);
+}
+
+.search-box input {
+    padding-left: 45px;
+}
+
+
+/* =========================
+   Product Cards
+========================= */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: 24px;
+    overflow: hidden;
+
+    box-shadow: var(--soft);
+    transition: 0.28s;
+
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow);
+}
+
+.product-img {
+    height: 245px;
+    background: #eeeeee;
+}
+
+.product-info {
+    padding: 18px;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 1.05rem;
+}
+
+.rating {
+    color: #f59e0b;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+.price {
+    color: var(--primary);
+    font-weight: 800;
+    font-size: 1.1rem;
+
+    margin: 8px 0 12px;
+}
+
+.card-actions {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 9px;
+}
+
+.icon-btn {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+
+    border: 1px solid var(--border);
+    background: var(--white);
+
+    cursor: pointer;
+    color: var(--pink);
+    font-size: 17px;
+}
+
+.add-to-cart {
+    border: none;
+    border-radius: 999px;
+    padding: 11px 14px;
+
+    color: var(--white);
+    background: linear-gradient(90deg, var(--primary), var(--pink));
+
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* =========================
+   Stock Status
+========================= */
+.stock {
+    display: inline-block;
+
+    margin-top: 6px;
+    padding: 5px 10px;
+
+    border-radius: 999px;
+    background: #ecfdf5;
+    color: #047857;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.stock.low {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.out {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+
+/* =========================
+   Product Details
+========================= */
+.detail-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+
+    align-items: start;
+}
+
+.detail-card {
+    width: 100%;
+}
+
+.detail-image {
+    height: 470px;
+    border-radius: 28px;
+    overflow: hidden;
+
+    box-shadow: var(--soft);
+}
+
+.detail-info h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.size-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    margin: 15px 0;
+}
+
+.size-row button {
+    border: 1px solid var(--border);
+    background: var(--white);
+    border-radius: 12px;
+
+    padding: 10px 16px;
+
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.size-option.selected {
+    background: linear-gradient(90deg, var(--primary), var(--pink));
+    color: var(--white);
+    border-color: transparent;
+
+    box-shadow: 0 8px 18px rgba(238, 9, 121, 0.18);
+}
+
+.review-box {
+    background: var(--white);
+    border-radius: 20px;
+
+    padding: 18px;
+    margin-top: 20px;
+
+    box-shadow: var(--soft);
+}

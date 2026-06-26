@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Category Heading -->
+<section class="category-hero">
+
+    <div class="container">
+
+        <h1>
+            {{ title }} <span class="gradient-text">Collection</span>
+        </h1>
+
+        <p>
+            Browse all {{ title }} products available in our store.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Category Products -->
+<section class="section" style="padding-top:20px;">
+
+    <div class="container">
+
+        <!-- Category Navigation -->
+        <div class="category-filter">
+
+            <a href="/shop">All</a>
+
+            <a href="/men" class="{% if category == 'men' %}active{% endif %}">
+                Men
+            </a>
+
+            <a href="/women" class="{% if category == 'women' %}active{% endif %}">
+                Women
+            </a>
+
+            <a href="/kids" class="{% if category == 'kids' %}active{% endif %}">
+                Kids
+            </a>
+
+            <a href="/accessories" class="{% if category == 'accessories' %}active{% endif %}">
+                Accessories
+            </a>
+
+        </div>
+
+        <!-- Search and Sorting -->
+        <div class="shop-tools">
+
+            <div class="search-box">
+                <i class="fa-solid fa-search"></i>
+                <input type="text" id="search-input" placeholder="Search in {{ title }}...">
+            </div>
+
+            <select id="sort-select">
+                <option value="">Sort Products</option>
+                <option value="low">Price Low to High</option>
+                <option value="high">Price High to Low</option>
+                <option value="rating">Top Rated</option>
+                <option value="newest">Newest</option>
+            </select>
+
+            <a href="/wishlist" class="btn small-btn">
+                Wishlist
+            </a>
+
+        </div>
+
+        <!-- Products will load here -->
+        <div
+            class="product-grid"
+            id="product-grid"
+            data-category="{{ category }}">
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

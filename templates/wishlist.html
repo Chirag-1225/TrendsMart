@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Wishlist Heading -->
+<section class="page-title">
+
+    <div class="container">
+
+        <h1>
+            My <span class="gradient-text">Wishlist</span>
+        </h1>
+
+        <p>
+            Here you can view all your favourite saved products.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- Wishlist Section -->
+<section class="section" style="padding-top:20px;">
+
+    <div class="container">
+
+        <div class="wishlist-card">
+
+            <!-- Wishlist products will load here -->
+            <div class="product-grid" id="wishlist-grid"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

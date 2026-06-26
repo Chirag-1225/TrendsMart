@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trend's Mart | Login</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <!-- Login / Register Section -->
+    <section class="start-page">
+
+        <!-- Left Side -->
+        <div class="start-left">
+
+            <h1>Trend's Mart</h1>
+
+            <p>
+                Explore fashion products, save your favourite items,
+                view product details and shop with a modern
+                full-stack e-commerce platform.
+            </p>
+
+            <!-- Features -->
+            <div class="start-badges">
+
+                <span>Flask API</span>
+                <span>SQLite</span>
+                <span>Wishlist</span>
+                <span>Product Search</span>
+
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="start-right">
+
+            <div class="auth-card">
+
+                <h2>
+                    Welcome <span class="gradient-text">Back</span>
+                </h2>
+
+                <!-- Login / Register Tabs -->
+                <div class="tabs">
+
+                    <button id="login-tab" class="active">
+                        Login
+                    </button>
+
+                    <button id="register-tab">
+                        Register
+                    </button>
+
+                </div>
+
+                <!-- Login Form -->
+                <form id="login-form">
+
+                    <input type="email" id="login-email" placeholder="Email Address" required>
+                    <input type="password" id="login-password" placeholder="Password" required>
+
+                    <button class="btn" type="submit">
+                        Login
+                    </button>
+
+                </form>
+
+                <!-- Register Form -->
+                <form id="register-form" class="hidden">
+
+                    <input type="text" id="reg-name" placeholder="Full Name" required>
+                    <input type="email" id="reg-email" placeholder="Email Address" required>
+                    <input type="text" id="reg-phone" placeholder="Phone Number">
+
+                    <textarea id="reg-address" placeholder="Address"></textarea>
+
+                    <input type="password" id="reg-password" placeholder="Password" required>
+
+                    <button class="btn" type="submit">
+                        Register
+                    </button>
+
+                </form>
+
+                <!-- Skip Login -->
+                <a href="/home" class="skip-link">
+                    Skip for now →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+
+</html>

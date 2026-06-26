@@ -1,64 +1,88 @@
-# Trend's Mart - Beginner Friendly Full Stack E-Commerce Project
+# 🛍️ Trend'sMart – Full Stack E-Commerce Platform
 
-This version is formatted in a clean and beginner-friendly style.
+Trend'sMart is a beginner-friendly **full-stack e-commerce web application** developed using **Python, Flask, HTML, CSS, JavaScript, SQLite, and SQLAlchemy**. The platform allows users to browse products, manage their shopping cart, create accounts, maintain wishlists, and place orders through a responsive and user-friendly interface.
 
-## Features
+---
 
-- Login and register system
-- Skip login option
-- Product search and sorting
-- Category pages: Men, Women, Kids, Accessories
-- Product details page
-- Size selection before adding to cart
-- Wishlist page
-- Cart and payment page
-- Profile photo upload
-- Account dashboard
-- Order history
-- Cancel order option
-- Flask REST APIs
-- SQLite database using SQLAlchemy
+## 🚀 Features
 
-## How to Run
+### 🔐 Authentication
 
-```bash
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-python app.py
-```
+* User Registration
+* User Login
+* Skip Login Option
 
-Open in browser:
+### 🛒 Shopping Experience
 
-```txt
-http://127.0.0.1:5000
-```
+* Browse Products
+* Product Search
+* Product Sorting
+* Product Details Page
+* Size Selection Before Adding to Cart
+* Wishlist Management
+* Shopping Cart
+* Secure Payment Page
 
-## Add Images
+### 👤 User Account
 
-Put images inside:
+* Profile Dashboard
+* Profile Photo Upload
+* Order History
+* Cancel Orders
 
-```txt
-static/images/
-```
+### 🗂️ Categories
 
-Required image names:
+* Men's Collection
+* Women's Collection
+* Kids Collection
+* Accessories Collection
 
-```txt
-hero-image.jpg
-sale-image.jpg
-for men.jpg
-for women.jpg
-for kids.jpg
-for accessories.jpg
-...
-wallet.jpg
-```
+### ⚙️ Backend
 
-## Project Structure
+* Flask REST APIs
+* SQLite Database
+* SQLAlchemy ORM
+* Session Management
 
-```txt
-Trend's Mart/
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+
+* HTML5
+* CSS3
+* JavaScript
+
+**Backend**
+
+* Python
+* Flask
+
+**Database**
+
+* SQLite
+* SQLAlchemy
+
+---
+
+## 💡 Concepts Used
+
+* Flask Routing
+* REST APIs
+* CRUD Operations
+* Authentication & Session Management
+* SQLAlchemy ORM
+* Database Relationships
+* File Upload Handling
+* Responsive Web Design
+
+---
+
+## 📂 Project Structure
+
+```text
+Trend'sMart/
 ├── app.py
 ├── requirements.txt
 ├── README.md
@@ -73,36 +97,114 @@ Trend's Mart/
 │   ├── cart.html
 │   ├── payment.html
 │   └── account.html
-└── static/
-    ├── css/
-    │   ├── style.css
-    │   ├── base.css
-    │   ├── navbar.css
-    │   ├── auth.css
-    │   ├── home.css
-    │   ├── products.css
-    │   ├── cart-payment.css
-    │   ├── account.css
-    │   ├── footer.css
-    │   └── responsive.css
-    ├── js/
-    │   └── main.js
-    ├── images/
-    └── uploads/
+│
+├── static/
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   └── uploads/
 ```
-## ScreenShots
-   1.Login Page
-   2.SignUp Page
-   3.Home Header 
-   4.Home Middle
-   5.Home Footer
-   6.Shop page
-   7.Men's Product Page
-   8.Women Product Page
-   9.Kid's Product Page
-   10.Accessories Page
-   11.Wishlist Page
-   12.Product Page
-   13.Cart Page
-   14.Payment Page
-   15.Account Page
+
+---
+
+## ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Chirag-1225/trendsmart.git
+```
+
+Move into the project folder
+
+```bash
+cd trendsmart
+```
+
+Create a virtual environment
+
+```bash
+python -m venv venv
+```
+
+Activate virtual environment
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application
+
+```bash
+python app.py
+```
+
+Open in your browser
+
+```text
+http://127.0.0.1:5000
+```
+
+---
+
+## 🖼️ Screenshots
+
+### 🔐 Authentication
+
+* Login Page
+* Sign Up Page
+
+### 🏠 Home
+
+* Home Header
+* Home Middle Section
+* Home Footer
+
+### 🛍️ Products
+
+* Shop Page
+* Men's Category
+* Women's Category
+* Kids Category
+* Accessories Category
+* Product Details Page
+
+### ❤️ Shopping
+
+* Wishlist Page
+* Cart Page
+* Payment Page
+
+### 👤 User
+
+* Account Dashboard
+
+> **Note:** Place all screenshots inside the `screenshots/` folder and update the image paths in this README.
+
+---
+
+## 🔮 Future Improvements
+
+* Online Payment Gateway
+* Product Reviews & Ratings
+* Order Tracking
+* Admin Dashboard
+* Email Notifications
+* Discount Coupons
+* Product Recommendations
+
+---
+
+## 👨‍💻 Author
+
+**Chirag Saini**
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
